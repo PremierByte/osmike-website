@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@theme inline {
+  --color-primary: #0A1229;
+  --color-secondary: #dc3545;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #f4f6fc;
+  --foreground: #0A1229;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Background mesh class */
+.bg-mesh {
+  background-image: radial-gradient(at 0% 0%, hsla(353,73%,54%,0.15) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, hsla(224,61%,10%,0.1) 0px, transparent 50%);
+}

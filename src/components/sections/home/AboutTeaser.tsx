@@ -1,0 +1,80 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight, Award, MapPin } from "lucide-react";
+
+export default function AboutTeaser() {
+  return (
+    <section className="py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="w-full lg:w-1/2 relative">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-primary aspect-[4/3] flex items-center justify-center">
+              {/* Abstract structural representation instead of an image */}
+              <div className="absolute inset-0 bg-brand-gradient opacity-20"></div>
+              <div className="w-3/4 h-3/4 border-4 border-secondary/30 rounded-2xl absolute -rotate-6"></div>
+              <div className="w-3/4 h-3/4 border-4 border-white/20 rounded-2xl absolute rotate-3 backdrop-blur-sm"></div>
+              <div className="text-center p-8 bg-primary/80 backdrop-blur-md rounded-2xl border border-white/10 shadow-2xl relative z-20">
+                <h3 className="text-5xl font-black text-white mb-2">15<span className="text-secondary">+</span></h3>
+                <p className="text-slate-300 font-medium uppercase tracking-widest text-sm">Years of Excellence</p>
+              </div>
+            </div>
+            
+            {/* Decorative background elements */}
+            <div className="absolute -top-8 -left-8 w-32 h-32 bg-secondary/10 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-primary/10 rounded-full blur-2xl"></div>
+          </div>
+
+          <div className="w-full lg:w-1/2">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-sm font-bold text-secondary uppercase tracking-widest mb-3">Our Legacy</h2>
+              <h3 className="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+                Building wealth through strategic real estate.
+              </h3>
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                Since our inception, Vantage has redefined the real estate landscape by combining localized market intelligence with global investment strategies. We don&apos;t just broker deals; we build long-term partnerships that secure and multiply your assets.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-8 mb-10">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/5 rounded-lg">
+                    <Award className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-primary mb-1">Industry Leaders</h4>
+                    <p className="text-sm text-slate-600">Recognized for top-tier advisory and brokerage.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-secondary/10 rounded-lg">
+                    <MapPin className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-primary mb-1">Prime Locations</h4>
+                    <p className="text-sm text-slate-600">Exclusive access to high-yield geographic zones.</p>
+                  </div>
+                </div>
+              </div>
+
+              <Link 
+                href="/about"
+                className="inline-flex items-center gap-2 font-bold text-primary hover:text-secondary transition-colors group"
+              >
+                Discover Our Story
+                <div className="w-8 h-8 rounded-full bg-primary/10 group-hover:bg-secondary/20 flex items-center justify-center transition-colors">
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
