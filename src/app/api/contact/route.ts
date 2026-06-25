@@ -106,7 +106,7 @@ export async function POST(req: Request) {
 
     // 3. Nodemailer Transmission Trigger
     await transporter.sendMail({
-      from: `"Vantage Website" <${fromEmail}>`,
+      from: `"OSMIKE Website" <${fromEmail}>`,
       to: "info@vantage-agency.com",
       replyTo: email,
       subject: subjectLine,

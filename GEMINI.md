@@ -57,3 +57,6 @@ Adhere strictly to a granular, component-driven architecture. Every logical visu
 - Write complete, production-ready code blocks for each file. Do not use `// TODO`, `// ... rest of code`, or shorten code with placeholders.
 - Ensure full mobile-first responsiveness across all viewport breakpoints (`sm:`, `md:`, `lg:`, `xl:`).
 - Utilize the extended Tailwind color configuration exclusively (`text-primary`, `bg-secondary`, `bg-gradient-to-r`, `bg-primary`, etc.) to demonstrate rigid adherence to the brand design system.
+
+### 4. Git Workflows
+- **For any changes or implementation of features in this project, commit it to GitHub.**
