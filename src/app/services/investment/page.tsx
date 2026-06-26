@@ -6,7 +6,7 @@ import ServiceBenefitsSection from "@/components/sections/services/ServiceBenefi
 import { LineChart, PieChart, Globe } from "lucide-react";
 
 export const metadata = {
-  title: "Real Estate Investment Advisory | Vantage Real Estate",
+  title: "Real Estate Investment Advisory | OSMIKE BDM NIG LIMITED",
   description: "Data-driven portfolio strategies and high-yield opportunities.",
 };
 

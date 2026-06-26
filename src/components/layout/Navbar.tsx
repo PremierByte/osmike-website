@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Building2, Home, TrendingUp, Gem, Plane, Menu, X } from "lucide-react";
+import { companyInfo } from "@/config/companyInfo";
 
 const services = [
   { name: "Residential Property Management", icon: Home, href: "/services/residential" },
@@ -25,7 +26,7 @@ export default function Navbar() {
           <div className="w-8 h-8 rounded bg-gradient-to-br from-secondary to-orange-500 flex items-center justify-center">
             <Building2 className="w-5 h-5 text-white" />
           </div>
-          VANTAGE
+          {companyInfo.shortName.toUpperCase()}
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

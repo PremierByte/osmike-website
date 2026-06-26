@@ -3,7 +3,7 @@ import ServicesList from "@/components/sections/services/ServicesList";
 import CtaBanner from "@/components/sections/home/CtaBanner";
 
 export const metadata = {
-  title: "Services | Vantage Real Estate",
+  title: "Services | OSMIKE BDM NIG LIMITED",
   description: "Comprehensive real estate services tailored to your needs.",
 };
 

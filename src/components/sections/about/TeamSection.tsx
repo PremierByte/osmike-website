@@ -26,7 +26,7 @@ export default function TeamSection() {
           <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Leadership Team</h2>
           <div className="w-16 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Guiding Vantage with decades of combined experience, our leadership is dedicated to securing the best outcomes for our clients worldwide.
+            Guiding OSMIKE BDM with decades of combined experience, our leadership is dedicated to securing the best outcomes for our clients worldwide.
           </p>
         </div>
 

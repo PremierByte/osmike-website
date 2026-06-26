@@ -7,7 +7,7 @@ export default function PrivacyPolicySection() {
         <div className="prose prose-slate max-w-none">
           <h2 className="text-3xl font-bold text-primary mb-6">1. Introduction</h2>
           <p className="text-slate-600 mb-6 leading-relaxed">
-            Welcome to Vantage Real Estate ("we", "our", "us"). We are committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+            Welcome to OSMIKE BDM NIG LIMITED ("we", "our", "us"). We are committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
 
           <h2 className="text-3xl font-bold text-primary mb-6 mt-12">2. Information We Collect</h2>
@@ -43,9 +43,9 @@ export default function PrivacyPolicySection() {
 
           <h2 className="text-3xl font-bold text-primary mb-6 mt-12">6. Contact Us</h2>
           <p className="text-slate-600 mb-6 leading-relaxed">
-            If you have questions or comments about this policy, you may email us at privacy@vantage-agency.com or by post to:
+            If you have questions or comments about this policy, you may email us at info@osmikebdm.com or by post to:
             <br /><br />
-            <strong>Vantage Real Estate Agency</strong><br />
+            <strong>OSMIKE BDM NIG LIMITED</strong><br />
             123 Luxury Lane<br />
             Metropolis, NY 10001<br />
             United States

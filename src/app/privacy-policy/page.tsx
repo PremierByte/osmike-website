@@ -2,8 +2,8 @@ import PageHeader from "@/components/ui/PageHeader";
 import PrivacyPolicySection from "@/components/sections/legal/PrivacyPolicySection";
 
 export const metadata = {
-  title: "Privacy Policy | Vantage Real Estate",
-  description: "Learn about how Vantage Real Estate collects, uses, and protects your personal information.",
+  title: "Privacy Policy | OSMIKE BDM NIG LIMITED",
+  description: "Learn about how OSMIKE BDM NIG LIMITED collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPolicyPage() {

@@ -6,7 +6,7 @@ import ServiceBenefitsSection from "@/components/sections/services/ServiceBenefi
 import { Plane, Home, HeartHandshake } from "lucide-react";
 
 export const metadata = {
-  title: "Relocation & Concierge | Vantage Real Estate",
+  title: "Relocation & Concierge | OSMIKE BDM NIG LIMITED",
   description: "Seamless transitions for corporate executives and private wealth clients.",
 };
 

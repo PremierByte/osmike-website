@@ -26,7 +26,7 @@ export default function CtaBanner() {
             Ready to Elevate Your Real Estate Strategy?
           </h2>
           <p className="text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-medium">
-            Connect with our advisory team to discuss your objectives and discover how Vantage can deliver unparalleled results.
+            Connect with our advisory team to discuss your objectives and discover how OSMIKE BDM can deliver unparalleled results.
           </p>
           
           <Link 

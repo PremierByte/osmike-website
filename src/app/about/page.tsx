@@ -5,15 +5,15 @@ import TeamSection from "@/components/sections/about/TeamSection";
 import CtaBanner from "@/components/sections/home/CtaBanner";
 
 export const metadata = {
-  title: "About Us | Vantage Real Estate",
-  description: "Learn more about Vantage Real Estate's history, values, and global reach.",
+  title: "About Us | OSMIKE BDM NIG LIMITED",
+  description: "Learn more about OSMIKE BDM NIG LIMITED's history, values, and global reach.",
 };
 
 export default function AboutPage() {
   return (
     <>
       <PageHeader 
-        title="About Vantage" 
+        title="About OSMIKE BDM" 
         description="A legacy of excellence in luxury real estate, built on integrity and global insight."
         breadcrumbs={[{ label: "About", href: "/about" }]}
       />

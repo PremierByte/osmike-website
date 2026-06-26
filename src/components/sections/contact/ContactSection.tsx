@@ -1,21 +1,22 @@
 import ContactForm from "@/components/ui/ContactForm";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { companyInfo } from "@/config/companyInfo";
 
 const contactInfo = [
   {
     icon: MapPin,
     title: "Global Headquarters",
-    details: "1200 Luxury Avenue, Suite 400\nNew York, NY 10001"
+    details: companyInfo.address
   },
   {
     icon: Phone,
     title: "Direct Line",
-    details: "+1 (555) 123-4567\nAvailable 24/7 for urgent inquiries"
+    details: `${companyInfo.phones.join("\n")}\nAvailable 24/7 for urgent inquiries`
   },
   {
     icon: Mail,
     title: "Email",
-    details: "inquiries@vantage.com\npartnerships@vantage.com"
+    details: companyInfo.emails.join("\n")
   },
   {
     icon: Clock,
@@ -73,7 +74,7 @@ export default function ContactSection() {
         <div className="mt-24 w-full h-[400px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 relative">
           <div className="absolute inset-0 bg-slate-200 animate-pulse -z-10"></div>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1714408139591!5m2!1sen!2suk" 
+            src={`https://www.google.com/maps?q=${encodeURIComponent(companyInfo.address)}&output=embed`}
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
@@ -81,7 +82,7 @@ export default function ContactSection() {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-full"
-            title="Vantage Headquarters Location"
+            title={`${companyInfo.name} Location`}
           ></iframe>
         </div>
 

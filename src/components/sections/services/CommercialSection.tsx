@@ -55,7 +55,7 @@ export default function CommercialSection() {
               <div className="relative z-10 bg-primary/90 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-2xl w-full">
                 <h4 className="text-2xl font-bold text-white mb-2">Strategic Advantage</h4>
                 <p className="text-slate-300">
-                  &quot;Vantage secured a flagship location that not only fit our budget but completely elevated our brand visibility.&quot;
+                  &quot;OSMIKE BDM secured a flagship location that not only fit our budget but completely elevated our brand visibility.&quot;
                 </p>
               </div>
             </div>

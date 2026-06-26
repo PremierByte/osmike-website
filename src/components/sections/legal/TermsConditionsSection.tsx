@@ -7,7 +7,7 @@ export default function TermsConditionsSection() {
         <div className="prose prose-slate max-w-none">
           <h2 className="text-3xl font-bold text-primary mb-6">1. Agreement to Terms</h2>
           <p className="text-slate-600 mb-6 leading-relaxed">
-            These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and Vantage Real Estate ("we", "us", or "our"), concerning your access to and use of our website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto.
+            These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and OSMIKE BDM NIG LIMITED ("we", "us", or "our"), concerning your access to and use of our website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto.
           </p>
           <p className="text-slate-600 mb-6 leading-relaxed">
             You agree that by accessing the site, you have read, understood, and agree to be bound by all of these Terms and Conditions. If you do not agree with all of these terms and conditions, then you are expressly prohibited from using the site and you must discontinue use immediately.
@@ -43,11 +43,11 @@ export default function TermsConditionsSection() {
           <p className="text-slate-600 mb-6 leading-relaxed">
             In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:
             <br /><br />
-            <strong>Vantage Real Estate Agency</strong><br />
+            <strong>OSMIKE BDM NIG LIMITED</strong><br />
             123 Luxury Lane<br />
             Metropolis, NY 10001<br />
             United States<br />
-            legal@vantage-agency.com
+            info@osmikebdm.com
           </p>
         </div>
       </div>

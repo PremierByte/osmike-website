@@ -31,7 +31,7 @@ export default function Features() {
     <section className="py-24 bg-slate-50 relative">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Why Choose Vantage?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Why Choose OSMIKE BDM?</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-slate-600">
             We blend deep market insight with white-glove service to deliver extraordinary results for our clients.

@@ -11,7 +11,7 @@ export default function MissionSection() {
               To redefine luxury living and commercial success.
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              At Vantage, we aim to bridge the gap between discerning investors and extraordinary properties. We don't just find spaces; we curate environments that foster growth, prosperity, and unparalleled comfort.
+              At OSMIKE BDM, we aim to bridge the gap between discerning investors and extraordinary properties. We don't just find spaces; we curate environments that foster growth, prosperity, and unparalleled comfort.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
               Our commitment goes beyond closing deals. We build long-term partnerships through transparency, rigorous market analysis, and a relentless pursuit of excellence that secures our clients' financial futures.

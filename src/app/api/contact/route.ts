@@ -36,7 +36,7 @@ export async function POST(req: Request) {
 
     const subjectLine = `New Contact Inquiry: ${service || "General Inquiry"}`;
 
-    // 2. High-Fidelity Transactional HTML Mail Layout for Vantage
+    // 2. High-Fidelity Transactional HTML Mail Layout for OSMIKE BDM
     const htmlEmailTemplate = `
       <!DOCTYPE html>
       <html>
@@ -64,7 +64,7 @@ export async function POST(req: Request) {
           <!-- Branded Banner Component -->
           <div class="banner">
             <h1>New Message Received</h1>
-            <p>Vantage Real Estate Agency</p>
+            <p>OSMIKE BDM NIG LIMITED</p>
           </div>
 
           <div class="content">
@@ -94,7 +94,7 @@ export async function POST(req: Request) {
 
           <!-- Base System Ledger Footer -->
           <div class="footer">
-            <div style="margin-bottom: 8px;">Automated Notification • Vantage Real Estate</div>
+            <div style="margin-bottom: 8px;">Automated Notification • OSMIKE BDM NIG LIMITED</div>
             <div class="icon">🏢</div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export async function POST(req: Request) {
     // 3. Nodemailer Transmission Trigger
     await transporter.sendMail({
       from: `"OSMIKE Website" <${fromEmail}>`,
-      to: "info@vantage-agency.com",
+      to: "info@osmikebdm.com",
       replyTo: email,
       subject: subjectLine,
       html: htmlEmailTemplate,

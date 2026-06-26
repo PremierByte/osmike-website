@@ -55,7 +55,7 @@ export default function RelocationSection() {
               <div className="relative z-10 bg-primary/90 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-2xl w-full">
                 <h4 className="text-2xl font-bold text-white mb-2">Frictionless Transitions</h4>
                 <p className="text-slate-300">
-                  &quot;Our CEO&apos;s relocation from London to New York was entirely seamless. Vantage anticipated every need before we even voiced it.&quot;
+                  &quot;Our CEO&apos;s relocation from London to New York was entirely seamless. OSMIKE BDM anticipated every need before we even voiced it.&quot;
                 </p>
               </div>
             </div>

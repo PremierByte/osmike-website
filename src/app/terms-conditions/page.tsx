@@ -2,8 +2,8 @@ import PageHeader from "@/components/ui/PageHeader";
 import TermsConditionsSection from "@/components/sections/legal/TermsConditionsSection";
 
 export const metadata = {
-    title: "Terms & Conditions | Vantage Real Estate",
-    description: "Read the terms and conditions for using the Vantage Real Estate website and services.",
+    title: "Terms & Conditions | OSMIKE BDM NIG LIMITED",
+    description: "Read the terms and conditions for using the OSMIKE BDM NIG LIMITED website and services.",
 };
 
 export default function TermsConditionsPage() {

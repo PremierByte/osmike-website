@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Vantage didn't just find us an office space; they identified a strategic headquarters that elevated our brand presence overnight.",
+    quote: "OSMIKE BDM didn't just find us an office space; they identified a strategic headquarters that elevated our brand presence overnight.",
     author: "Elena Rodriguez",
     role: "CEO, TechNova Solutions",
     color: "from-secondary to-orange-500"
@@ -35,7 +35,7 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Client Success</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-slate-300">
-            Don&apos;t just take our word for it. Hear from the visionaries and leaders who trust Vantage with their real estate assets.
+            Don&apos;t just take our word for it. Hear from the visionaries and leaders who trust OSMIKE BDM with their real estate assets.
           </p>
         </div>
 

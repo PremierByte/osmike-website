@@ -39,7 +39,7 @@ export default function AboutTeaser() {
                 Building wealth through strategic real estate.
               </h3>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Since our inception, Vantage has redefined the real estate landscape by combining localized market intelligence with global investment strategies. We don&apos;t just broker deals; we build long-term partnerships that secure and multiply your assets.
+                Since our inception, OSMIKE BDM has redefined the real estate landscape by combining localized market intelligence with global investment strategies. We don&apos;t just broker deals; we build long-term partnerships that secure and multiply your assets.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-8 mb-10">

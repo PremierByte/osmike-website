@@ -55,7 +55,7 @@ export default function ValuationSection() {
               <div className="relative z-10 bg-primary/90 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-2xl w-full">
                 <h4 className="text-2xl font-bold text-white mb-2">Precision & Discretion</h4>
                 <p className="text-slate-300">
-                  &quot;Vantage provided a valuation report that captured the true intrinsic value of our heritage property, far exceeding standard appraisals.&quot;
+                  &quot;OSMIKE BDM provided a valuation report that captured the true intrinsic value of our heritage property, far exceeding standard appraisals.&quot;
                 </p>
               </div>
             </div>

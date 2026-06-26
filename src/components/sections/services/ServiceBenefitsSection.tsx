@@ -16,7 +16,7 @@ interface ServiceBenefitsSectionProps {
 }
 
 export default function ServiceBenefitsSection({
-  title = "Why Choose Vantage",
+  title = "Why Choose OSMIKE BDM",
   description = "Unparalleled expertise and a commitment to excellence.",
   benefits
 }: ServiceBenefitsSectionProps) {

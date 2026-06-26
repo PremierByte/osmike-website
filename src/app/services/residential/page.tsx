@@ -6,7 +6,7 @@ import ServiceBenefitsSection from "@/components/sections/services/ServiceBenefi
 import { Shield, Clock, TrendingUp } from "lucide-react";
 
 export const metadata = {
-  title: "Residential Property Management | Vantage Real Estate",
+  title: "Residential Property Management | OSMIKE BDM NIG LIMITED",
   description: "End-to-end management of luxury residential assets.",
 };
 

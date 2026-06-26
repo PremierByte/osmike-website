@@ -30,7 +30,7 @@ export default function ResidentialSection() {
               </p>
             </div>
             
-            <h3 className="text-xl font-bold text-primary mb-4">The Vantage Advantage</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">The OSMIKE BDM Advantage</h3>
             <ul className="flex flex-col gap-3">
               {benefits.map((benefit, idx) => (
                 <li key={idx} className="flex items-start gap-3">
@@ -55,7 +55,7 @@ export default function ResidentialSection() {
               <div className="relative z-10 bg-primary/90 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-2xl w-full">
                 <h4 className="text-2xl font-bold text-white mb-2">Peace of Mind</h4>
                 <p className="text-slate-300">
-                  &quot;Vantage transformed our approach to property ownership. They handle the complexities, allowing us to simply enjoy the returns.&quot;
+                  &quot;OSMIKE BDM transformed our approach to property ownership. They handle the complexities, allowing us to simply enjoy the returns.&quot;
                 </p>
               </div>
             </div>

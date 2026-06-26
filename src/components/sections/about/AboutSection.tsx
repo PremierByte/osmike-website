@@ -23,7 +23,7 @@ export default function AboutSection() {
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto mb-8"></div>
             <div className="prose prose-lg text-slate-600 mx-auto max-w-3xl">
               <p className="mb-6 text-xl leading-relaxed">
-                Founded with a singular vision to elevate the standard of real estate advisory, Vantage has grown from a boutique firm into a premier agency trusted by visionaries, leaders, and institutional investors worldwide.
+                Founded with a singular vision to elevate the standard of real estate advisory, OSMIKE BDM has grown from a boutique firm into a premier agency trusted by visionaries, leaders, and institutional investors worldwide.
               </p>
               <p className="mb-12 text-lg">
                 Our approach is fundamentally different. We view real estate not merely as transactions, but as strategic assets that require meticulous management, precise valuation, and bold positioning.

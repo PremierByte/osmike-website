@@ -6,7 +6,7 @@ import ServiceBenefitsSection from "@/components/sections/services/ServiceBenefi
 import { Briefcase, Map, Target } from "lucide-react";
 
 export const metadata = {
-  title: "Commercial Brokerage & Leasing | Vantage Real Estate",
+  title: "Commercial Brokerage & Leasing | OSMIKE BDM NIG LIMITED",
   description: "Strategic placement and negotiation for prime commercial spaces.",
 };
 

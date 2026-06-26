@@ -10,7 +10,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Vantage | Premium Real Estate Agency",
+  title: "OSMIKE BDM | Premium Real Estate Agency",
   description: "Redefining Luxury Living & Commercial Spaces. Experience unmatched expertise in residential management, commercial brokerage, and luxury valuation.",
 };
 

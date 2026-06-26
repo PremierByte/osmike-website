@@ -3,7 +3,7 @@ import FaqSection from "@/components/sections/faq/FaqSection";
 import CtaBanner from "@/components/sections/home/CtaBanner";
 
 export const metadata = {
-  title: "FAQ | Vantage Real Estate",
+  title: "FAQ | OSMIKE BDM NIG LIMITED",
   description: "Frequently asked questions about our luxury real estate services.",
 };
 

@@ -6,7 +6,7 @@ import ServiceBenefitsSection from "@/components/sections/services/ServiceBenefi
 import { FileSearch, Calculator, BadgeCheck } from "lucide-react";
 
 export const metadata = {
-  title: "Luxury Property Valuation | Vantage Real Estate",
+  title: "Luxury Property Valuation | OSMIKE BDM NIG LIMITED",
   description: "Meticulous appraisals combining proprietary market algorithms with nuanced understanding.",
 };
 
