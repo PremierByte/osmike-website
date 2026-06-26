@@ -26,13 +26,13 @@ const contactInfo = [
 
 export default function ContactSection() {
   return (
-    <section className="py-32 relative overflow-hidden bg-slate-50">
+    <section className="py-24 relative overflow-hidden bg-slate-50">
       {/* Dynamic Background Mesh Gradients */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full bg-gradient-to-bl from-secondary/10 via-[#1a2b5c]/5 to-transparent pointer-events-none"></div>
       <div className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 xl:gap-24 items-center">
+        <div className="flex flex-col lg:flex-row gap-16 xl:gap-24 items-start">
           
           <div className="w-full lg:w-5/12">
             <div className="relative mb-12">
@@ -45,15 +45,15 @@ export default function ContactSection() {
               </p>
             </div>
             
-            <div className="flex flex-col gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 md:gap-8">
               {contactInfo.map((info, idx) => (
-                <div key={idx} className="group flex items-start gap-6 p-4 -ml-4 rounded-2xl hover:bg-white hover:shadow-lg hover:shadow-secondary/5 transition-all duration-300 border border-transparent hover:border-slate-100">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-[#1a2b5c] flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(10,18,41,0.2)] group-hover:scale-110 transition-transform duration-300">
-                    <info.icon className="w-6 h-6 text-white" />
+                <div key={idx} className="group flex flex-col sm:flex-row lg:flex-row items-start gap-4 sm:gap-6 p-6 sm:p-4 lg:-ml-4 rounded-2xl bg-white lg:bg-transparent lg:hover:bg-white shadow-sm lg:shadow-none lg:hover:shadow-lg lg:hover:shadow-secondary/5 transition-all duration-300 border border-slate-100 lg:border-transparent lg:hover:border-slate-100">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-primary to-[#1a2b5c] flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(10,18,41,0.2)] group-hover:scale-110 transition-transform duration-300">
+                    <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-primary mb-1 text-lg">{info.title}</h4>
-                    <p className="text-slate-600 whitespace-pre-line leading-relaxed">{info.details}</p>
+                    <h4 className="font-bold text-primary mb-1 text-base sm:text-lg">{info.title}</h4>
+                    <p className="text-sm sm:text-base text-slate-600 whitespace-pre-line leading-relaxed">{info.details}</p>
                   </div>
                 </div>
               ))}
@@ -68,6 +68,23 @@ export default function ContactSection() {
           </div>
           
         </div>
+
+        {/* Map Section */}
+        <div className="mt-24 w-full h-[400px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 relative">
+          <div className="absolute inset-0 bg-slate-200 animate-pulse -z-10"></div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1714408139591!5m2!1sen!2suk" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={false} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full"
+            title="Vantage Headquarters Location"
+          ></iframe>
+        </div>
+
       </div>
     </section>
   );
