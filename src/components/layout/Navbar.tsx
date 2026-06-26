@@ -117,10 +117,10 @@ export default function Navbar() {
               >
                 About Us
               </Link>
-              
+
               <div className="flex flex-col gap-2">
-                <button 
-                  className="flex items-center justify-between text-slate-400 font-medium text-sm uppercase tracking-wider w-full text-left"
+                <button
+                  className="flex items-center justify-between text-slate-400 font-medium text-lg tracking-wider w-full text-left"
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 >
                   Services
