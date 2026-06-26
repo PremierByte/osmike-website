@@ -1,4 +1,5 @@
 import { CheckCircle2, Home } from "lucide-react";
+import Image from "next/image";
 
 const benefits = [
   "Comprehensive tenant screening and relationship management",
@@ -41,14 +42,19 @@ export default function ResidentialSection() {
           </div>
           
           <div className="w-full lg:w-1/2">
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] bg-primary flex items-center justify-center p-12 text-center shadow-2xl border border-slate-100">
-              <div className="absolute inset-0 bg-brand-gradient opacity-20"></div>
-              <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 blur-[80px] rounded-full"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 blur-[80px] rounded-full"></div>
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] bg-primary flex items-end justify-center p-8 text-center shadow-2xl border border-slate-100">
+              <Image
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop"
+                alt="Luxury Residential Property"
+                width={800}
+                height={1000}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-brand-gradient opacity-20 mix-blend-overlay"></div>
               
-              <div className="relative z-10 bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
-                <h4 className="text-2xl font-bold text-white mb-4">Peace of Mind</h4>
-                <p className="text-slate-200">
+              <div className="relative z-10 bg-primary/90 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-2xl w-full">
+                <h4 className="text-2xl font-bold text-white mb-2">Peace of Mind</h4>
+                <p className="text-slate-300">
                   &quot;Vantage transformed our approach to property ownership. They handle the complexities, allowing us to simply enjoy the returns.&quot;
                 </p>
               </div>

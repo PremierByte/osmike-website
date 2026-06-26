@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Award, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutTeaser() {
   return (
@@ -11,19 +12,16 @@ export default function AboutTeaser() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="w-full lg:w-1/2 relative">
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-primary aspect-[4/3]">
-              <img 
-                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" 
-                alt="Luxury property showcase" 
+              <Image
+                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop"
+                alt="Luxury property showcase"
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-brand-gradient opacity-20 mix-blend-overlay"></div>
-              
-              <div className="absolute bottom-6 left-6 bg-primary/90 backdrop-blur-md rounded-2xl border border-white/10 shadow-2xl p-6 sm:p-8 z-20">
-                <h3 className="text-4xl sm:text-5xl font-black text-white mb-2">15<span className="text-secondary">+</span></h3>
-                <p className="text-slate-300 font-medium uppercase tracking-widest text-xs sm:text-sm">Years of Excellence</p>
-              </div>
             </div>
-            
+
             {/* Decorative background elements */}
             <div className="absolute -top-8 -left-8 w-32 h-32 bg-secondary/10 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-primary/10 rounded-full blur-2xl"></div>
@@ -65,7 +63,7 @@ export default function AboutTeaser() {
                 </div>
               </div>
 
-              <Link 
+              <Link
                 href="/about"
                 className="inline-flex items-center gap-2 font-bold text-primary hover:text-secondary transition-colors group"
               >
