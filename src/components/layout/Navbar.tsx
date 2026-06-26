@@ -24,7 +24,7 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
       <nav className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-primary tracking-tighter flex items-center gap-2">
-          <Image src="/logo.png" alt={`${companyInfo.shortName} Logo`} width={48} height={48} className="object-contain" />
+          <Image src="/logo.png" loading="eager" alt={`${companyInfo.shortName} Logo`} width={48} height={48} className="object-contain" />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

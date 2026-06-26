@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="flex flex-col gap-6">
             <Link href="/" className="text-2xl font-bold text-white tracking-tighter flex items-center gap-2">
-              <Image src="/logo.png" alt={`${companyInfo.shortName} Logo`} width={60} height={60} className="brightness-0 invert object-contain" />
+              <Image src="/logo.png" alt={`${companyInfo.shortName} Logo`} loading="eager" width={60} height={60} className="brightness-0 invert object-contain" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
               {companyInfo.description}
