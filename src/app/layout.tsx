@@ -12,6 +12,9 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "OSMIKE BDM | Premium Real Estate Agency",
   description: "Redefining Luxury Living & Commercial Spaces. Experience unmatched expertise in residential management, commercial brokerage, and luxury valuation.",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
