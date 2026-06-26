@@ -21,19 +21,18 @@ export default function Navbar() {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-primary shadow-lg">
+    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
       <nav className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-white tracking-tighter flex items-center gap-2">
+        <Link href="/" className="text-2xl font-bold text-primary tracking-tighter flex items-center gap-2">
           <Image src="/logo.png" alt={`${companyInfo.shortName} Logo`} width={48} height={48} className="object-contain" />
-          {companyInfo.shortName.toUpperCase()}
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/" className="text-slate-300 hover:text-secondary transition-colors font-medium">
+          <Link href="/" className="text-slate-600 hover:text-secondary transition-colors font-medium">
             Home
           </Link>
 
-          <Link href="/about" className="text-slate-300 hover:text-secondary transition-colors font-medium">
+          <Link href="/about" className="text-slate-600 hover:text-secondary transition-colors font-medium">
             About Us
           </Link>
 
@@ -42,7 +41,7 @@ export default function Navbar() {
             onMouseEnter={() => setIsServicesOpen(true)}
             onMouseLeave={() => setIsServicesOpen(false)}
           >
-            <Link href="/services" className="text-slate-300 hover:text-secondary transition-colors flex items-center gap-1 font-medium py-2">
+            <Link href="/services" className="text-slate-600 hover:text-secondary transition-colors flex items-center gap-1 font-medium py-2">
               Services <ChevronDown className="w-4 h-4" />
             </Link>
 
@@ -53,20 +52,20 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="absolute top-full right-0 w-80 bg-primary border border-secondary/20 rounded-xl shadow-2xl overflow-hidden mt-2 p-2"
+                  className="absolute top-full right-0 w-80 bg-white border border-slate-100 rounded-xl shadow-2xl overflow-hidden mt-2 p-2"
                 >
-                  <div className="absolute inset-0 bg-brand-gradient opacity-5"></div>
+                  <div className="absolute inset-0 bg-slate-50 opacity-50"></div>
                   <div className="relative flex flex-col gap-1">
                     {services.map((service, idx) => (
                       <Link
                         key={idx}
                         href={service.href}
-                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
+                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group"
                       >
                         <div className="p-2 rounded bg-secondary/10 group-hover:bg-secondary/20 transition-colors">
                           <service.icon className="w-5 h-5 text-secondary" />
                         </div>
-                        <span className="text-sm font-medium text-slate-200 group-hover:text-white">{service.name}</span>
+                        <span className="text-sm font-medium text-slate-700 group-hover:text-primary">{service.name}</span>
                       </Link>
                     ))}
                   </div>
@@ -85,7 +84,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle Button */}
         <button
-          className="md:hidden text-white hover:text-secondary transition-colors"
+          className="md:hidden text-primary hover:text-secondary transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -100,19 +99,19 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="md:hidden bg-primary border-b border-primary overflow-hidden"
+            className="md:hidden bg-white border-b border-slate-100 overflow-hidden"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               <Link
                 href="/"
-                className="text-slate-300 hover:text-secondary transition-colors font-medium text-lg"
+                className="text-slate-600 hover:text-secondary transition-colors font-medium text-lg"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-slate-300 hover:text-secondary transition-colors font-medium text-lg"
+                className="text-slate-600 hover:text-secondary transition-colors font-medium text-lg"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About Us
@@ -120,7 +119,7 @@ export default function Navbar() {
 
               <div className="flex flex-col gap-2">
                 <button
-                  className="flex items-center justify-between text-slate-400 font-medium text-lg tracking-wider w-full text-left"
+                  className="flex items-center justify-between text-slate-600 font-medium text-lg tracking-wider w-full text-left"
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 >
                   Services
@@ -139,7 +138,7 @@ export default function Navbar() {
                           <Link
                             key={idx}
                             href={service.href}
-                            className="flex items-center gap-3 text-slate-300 hover:text-secondary transition-colors"
+                            className="flex items-center gap-3 text-slate-600 hover:text-secondary transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             <service.icon className="w-4 h-4" />
