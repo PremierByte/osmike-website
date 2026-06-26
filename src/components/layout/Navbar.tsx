@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Building2, Home, TrendingUp, Gem, Plane, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { companyInfo } from "@/config/companyInfo";
 
 const services = [
@@ -23,9 +24,7 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-primary shadow-lg">
       <nav className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-white tracking-tighter flex items-center gap-2">
-          <div className="w-8 h-8 rounded bg-gradient-to-br from-secondary to-orange-500 flex items-center justify-center">
-            <Building2 className="w-5 h-5 text-white" />
-          </div>
+          <Image src="/logo.png" alt={`${companyInfo.shortName} Logo`} width={48} height={48} className="object-contain" />
           {companyInfo.shortName.toUpperCase()}
         </Link>
 

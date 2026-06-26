@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Building2, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { companyInfo } from "@/config/companyInfo";
 
 export default function Footer() {
@@ -13,9 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="flex flex-col gap-6">
             <Link href="/" className="text-2xl font-bold text-white tracking-tighter flex items-center gap-2">
-              <div className="w-8 h-8 rounded bg-gradient-to-br from-secondary to-orange-500 flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-white" />
-              </div>
+              <Image src="/logo.png" alt={`${companyInfo.shortName} Logo`} width={48} height={48} className="object-contain" />
               {companyInfo.shortName}
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
