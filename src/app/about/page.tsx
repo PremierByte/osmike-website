@@ -1,5 +1,7 @@
 import PageHeader from "@/components/ui/PageHeader";
 import AboutSection from "@/components/sections/about/AboutSection";
+import MissionSection from "@/components/sections/about/MissionSection";
+import TeamSection from "@/components/sections/about/TeamSection";
 import CtaBanner from "@/components/sections/home/CtaBanner";
 
 export const metadata = {
@@ -17,6 +19,8 @@ export default function AboutPage() {
       />
       
       <AboutSection />
+      <MissionSection />
+      <TeamSection />
 
       <CtaBanner />
     </>

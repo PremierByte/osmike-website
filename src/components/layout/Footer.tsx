@@ -77,8 +77,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-slate-500 text-xs">
           <p>&copy; {new Date().getFullYear()} Vantage Real Estate. All rights reserved. - Developed by <Link href="https://premierbyte.ng" className="hover:text-white transition-colors">PremierByte</Link></p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
